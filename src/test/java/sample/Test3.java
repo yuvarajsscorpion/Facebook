@@ -1,7 +1,10 @@
 package sample;
 
+import org.testng.annotations.Test;
+
 public class Test3 {
-	public static void main(String[] args) {
+	@Test(priority = 1)
+	public void print3() {
 		System.out.println("Testcase 03...Executed");
 	}
 }
