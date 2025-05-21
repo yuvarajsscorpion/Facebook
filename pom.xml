@@ -4,9 +4,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-  <groupId>Facebook</groupId>
-  <artifactId>Facebook</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+	<groupId>Facebook</groupId>
+	<artifactId>Facebook</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>11</java.version>
+		<junit.version>4.13.1</junit.version>
+		<cucumber.version>7.21.1</cucumber.version>
+		<maven.compiler.version>3.8.1</maven.compiler.version>
+		<maven.surefire.version>2.22.2</maven.surefire.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -14,23 +22,12 @@
 			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>4.1.2</version>
-		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>4.1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>CucumberNaveenAutomationLabs</groupId>
-			<artifactId>CucumberPracticeFramework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>
